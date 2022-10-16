@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+<body>
+    <div class="list round-border">
+        <div class="date">
+            <div class="date-left">
+                <div id="date-number"></div>
+                <div>
+                    <div id="date-month"></div>
+                    <div id="date-year"></div>
+                </div>
+            </div>
+            <div id="date-text"></div>
+        </div>
+        <form onsubmit="addNewTask(event)">
+            <input type="text" autocomplete="off" placeholder="Nueva Tarea" class="round-border task-input">
+            <button type="submit" class="addTask btn">+</button>
+        </form>
+        <div id="task-container">
+            <ul class="lista">
+
+            </ul>
+        </div>
+
+        <div class="empty">
+            <p>No tienes tareas pendientes.</p>
+        </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
